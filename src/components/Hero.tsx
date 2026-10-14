@@ -1,4 +1,4 @@
-import { ArrowDown, Youtube, Instagram, Sparkles } from 'lucide-react';
+import { ArrowDown, Instagram, Sparkles } from 'lucide-react';
 
 function TikTokIcon({ className }: { className: string }) {
   return (
@@ -91,15 +91,6 @@ export default function Hero() {
 
         {/* Social quick links */}
         <div className="mt-12 flex items-center justify-center gap-6 animate-fade-in" style={{ animationDelay: '0.6s', opacity: 0, animationFillMode: 'forwards' }}>
-          <a
-            href="https://youtube.com/@dharmawhyd"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 transition-colors hover:text-gold-300"
-            aria-label="YouTube"
-          >
-            <Youtube className="h-5 w-5" />
-          </a>
           <a
             href="https://www.instagram.com/dharmawhyd/"
             target="_blank"

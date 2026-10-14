@@ -1,11 +1,6 @@
-import { Youtube, Instagram, Sparkles, ArrowUp } from 'lucide-react';
+import { Instagram, Sparkles, ArrowUp } from 'lucide-react';
 
 const socialLinks = [
-  {
-    name: 'YouTube',
-    href: 'https://youtube.com/@dharmawhyd',
-    icon: Youtube,
-  },
   {
     name: 'Instagram',
     href: 'https://www.instagram.com/dharmawhyd/',

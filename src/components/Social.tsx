@@ -1,4 +1,4 @@
-import { Youtube, Instagram, ArrowUpRight } from 'lucide-react';
+import { Instagram, ArrowUpRight } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 
 const socialLinks = [
@@ -14,12 +14,6 @@ const socialLinks = [
     href: 'https://www.tiktok.com/@darmawhyd',
     description: 'Video singkat — tips, fakta teknologi, dan AI dalam hitungan detik.',
   },
-  {
-    name: 'YouTube',
-    handle: '@dharmawhyd',
-    href: 'https://youtube.com/@dharmawhyd',
-    description: 'Video panjang — pembahasan mendalam tentang teknologi, AI, dan masa depan.',
-  },
 ];
 
 function TikTokIcon({ className }: { className: string }) {
@@ -31,7 +25,6 @@ function TikTokIcon({ className }: { className: string }) {
 }
 
 function getIcon(name: string) {
-  if (name === 'YouTube') return Youtube;
   if (name === 'Instagram') return Instagram;
   return TikTokIcon;
 }
@@ -66,7 +59,7 @@ export default function Social() {
         </div>
 
         {/* Social Cards */}
-        <div ref={cardsRef} className={`reveal ${cardsVisible ? 'is-visible' : ''} grid gap-6 md:grid-cols-3`}>
+        <div ref={cardsRef} className={`reveal ${cardsVisible ? 'is-visible' : ''} grid gap-6 md:grid-cols-2`}>
           {socialLinks.map((social, idx) => {
             const Icon = getIcon(social.name);
             return (
